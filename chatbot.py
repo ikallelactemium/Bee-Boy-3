@@ -7,7 +7,7 @@ import json
 import base64
 import datetime
 import config
-from utils.utils_user_authentication import *
+from utils_user_authentication import *
 from streamlit_lottie import st_lottie
 
 
@@ -25,12 +25,12 @@ from streamlit_lottie import st_lottie
 
 # Vous pouvez soit stocker ces infos dans des variables d'environnements,
 # soit les définir directement ici (pas recommandé en prod).
-endpoint = os.getenv("ENDPOINT_URL", "https://actemiumopenaiservice.openai.azure.com/")  
-deployment = os.getenv("DEPLOYMENT_NAME", "gpt-4o")  
-search_endpoint = os.getenv("SEARCH_ENDPOINT", "https://actemiumsearchopenai.search.windows.net")  
-search_key = os.getenv("SEARCH_KEY", "Zyx32Olcw069Cq2jZapnHm2mRjlrhIMHI7VQnLPu4MAzSeCa6igX")  
-search_index = os.getenv("SEARCH_INDEX_NAME", "indexopenaibeeboy") 
-subscription_key = os.getenv("AZURE_OPENAI_API_KEY", "1mmyAKRmYuBIdTMFlxOxMV5IFPbfllyykQUCx82sXkXLihOVTD2yJQQJ99AKAC5T7U2XJ3w3AAAAACOGVoMj")
+endpoint = config.endpoint
+deployment =  config.deployment
+search_endpoint = config.search_endpoint
+search_key = config.search_key
+search_index = config.search_index
+subscription_key = config.subscription_key
 
 
 # Mise en page et configuration de la page
