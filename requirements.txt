@@ -1,6 +1,6 @@
 streamlit
 openai
 pandas
-streamlit-star-rating
+st-star-rating
 streamlit-lottie
 azure-ai-ml
