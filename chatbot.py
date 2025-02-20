@@ -162,7 +162,7 @@ else:
 
     st.markdown('<style>div.block-container{padding-top:0rem;}</style>', unsafe_allow_html=True)
 
-    st.logo("Actemium.png",link="https://www.actemium.fr/implantations/actemium-maintenance-toulouse/presentation/", icon_image="images/Actemium_logo_01.png")
+    st.logo("Actemium.png",link="https://www.actemium.fr/implantations/actemium-maintenance-toulouse/presentation/", icon_image="Actemium.png")
 
     # Initialisation du client Azure OpenAI
     client = AzureOpenAI(
